@@ -1,0 +1,31 @@
+package hexlet.code;
+
+import java.util.Scanner;
+
+public class Engine {
+
+
+    public static void run(String[][] rounds, String condition) {
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Welcome to the Brain Games!");
+        System.out.print("May I have your name? ");
+        String userName = scanner.next();
+        System.out.println("Hello, " + userName + "!");
+        System.out.println(condition);
+        for (String[] round : rounds) {
+            System.out.println("Question: " + round[0]);
+            String userAnswer = scanner.next();
+
+            if (userAnswer.equals(round[1])) {
+                System.out.println("Correct!");
+            } else {
+                System.out.println("'" + userAnswer + "' is wrong answer ;(. Correct answer was '" + round[1] + "'");
+                return;
+            }
+        }
+        System.out.println("Congratulations!");
+
+    }
+}
