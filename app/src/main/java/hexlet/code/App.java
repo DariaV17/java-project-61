@@ -21,21 +21,17 @@ public class App {
 
         switch (choice) {
             case 1:
-                Greet.beggining();
+                Cli.greeting();
                 break;
-
             case 2:
                 Even.run();
                 break;
-
             case 3:
                 Calc.run();
                 break;
-//
             case 4:
                 GCD.run();
                 break;
-//
             case 5:
                 Progression.run();
                 break;

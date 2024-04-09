@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Engine {
 
-
+    public static final int ROUNDS_COUNT = 3;
     public static void run(String[][] rounds, String condition) {
         Scanner scanner = new Scanner(System.in);
 

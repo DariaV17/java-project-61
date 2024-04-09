@@ -3,7 +3,7 @@ plugins {
     application
     checkstyle
 }
-application { mainClass.set("hexlet.code.Main") }
+application { mainClass.set("hexlet.code.App") }
 
 group = "hexlet.code"
 version = "1.0-SNAPSHOT"
