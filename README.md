@@ -4,4 +4,4 @@
 <a href="https://codeclimate.com/github/DariaV17/java-project-61/maintainability"><img src="https://api.codeclimate.com/v1/badges/7059295f2bf425e0d5d3/maintainability" /></a>
 
 
-<img src="Greet.jpg">
+<img src="C:\Users\admin\IdeaProjects\java-project-61">
