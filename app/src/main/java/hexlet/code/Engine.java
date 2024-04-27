@@ -1,13 +1,9 @@
 package hexlet.code;
-
-import java.util.Scanner;
+import java.util.*;
 
 public class Engine {
-
-    public static final int ROUNDS_COUNT = 3;
     public static void run(String[][] rounds, String condition) {
         Scanner scanner = new Scanner(System.in);
-
 
         System.out.println("Welcome to the Brain Games!");
         System.out.print("May I have your name? ");
@@ -16,6 +12,7 @@ public class Engine {
         System.out.println(condition);
         for (String[] round : rounds) {
             System.out.println("Question: " + round[0]);
+            System.out.print("Your answer: ");
             String userAnswer = scanner.next();
 
             if (userAnswer.equals(round[1])) {
@@ -26,6 +23,5 @@ public class Engine {
             }
         }
         System.out.println("Congratulations!");
-
     }
 }
