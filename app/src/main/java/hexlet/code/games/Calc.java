@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 public class Calc {
     public static void run() {
         var questions = new String[3][2];
-        for (int i = 0; i < Utils.ROUNDS_COUNT; i++) {
+        for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             questions[i] = generateRound();
         }
         Engine.run(questions, "What is the result of the expression?");
@@ -14,7 +14,6 @@ public class Calc {
         int randomNumber1 = Utils.getRandomNumber(1, 100);
         int randomNumber2 = Utils.getRandomNumber(1, 100);
         char[] symbol = {'+', '-', '*'};
-        //
         int n = (int)Math.floor(Math.random() * symbol.length);
         char randomSymbol = symbol[n];
         int correctAnswer = sumRandomNumbers(randomNumber1, randomNumber2, randomSymbol);

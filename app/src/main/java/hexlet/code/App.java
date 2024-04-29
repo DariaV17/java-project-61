@@ -18,7 +18,7 @@ public class App {
 
         switch (choice) {
             case 1:
-                Greet.beggining();
+                Cli.beggining();
                 break;
             case 2:
                 Even.run();

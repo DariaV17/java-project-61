@@ -5,7 +5,7 @@ import hexlet.code.Utils;
 public class Progression {
     public static void run() {
         var questions = new String[3][2];
-        for (int i = 0; i < Utils.ROUNDS_COUNT; i++) {
+        for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             questions[i] = generateRound();
         }
         Engine.run(questions, "What number is missing in the progression?.");
@@ -13,8 +13,8 @@ public class Progression {
     public static String[] generateRound() {
         int firstValue = Utils.getRandomNumber(1, 10);
         int step = Utils.getRandomNumber(1, 10);
-        int progressionLength = Utils.getRandomNumber(1, 10);
-        int hiddenSymbol = Utils.getRandomNumber(1, 10);
+        int progressionLength = Utils.getRandomNumber(5, 10);
+        int hiddenSymbol = Utils.getRandomNumber(0, progressionLength);
         var progression = generateProgression(firstValue, step, progressionLength);
 
         var correctAnswer = progression[hiddenSymbol];

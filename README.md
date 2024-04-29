@@ -11,28 +11,30 @@ make run
 
 To start a game you need to choose one from the list
 
-<img src="screen\Greet.jpg">
+<img src="screens\Greet.jpg">
 
 The first game is testing if a number is even
 
-<img src="screen\Even+.jpg">
-<img src="screen\Even-.jpg">
+<img src="screens\Even+.jpg">
+<img src="screens\Even-.jpg">
 
 The second game is calculating a result of an expression
 
-<img src="screen\Calc+.jpg">
-<img src="screen\Calc-.jpg">
+<img src="screens\Calc+.jpg">
+<img src="screens\Calc-.jpg">
 
 The third game is calculating a greatest common divisor
 
-<img src="screen\GCD+.jpg">
-<img src="screen\GCD-.jpg">
+<img src="screens\GCD+.jpg">
+<img src="screens\GCD-.jpg">
 
 In the fourth game you have to find a missing number in a progression
 
+<img src="screens\Progression+.jpg">
+<img src="screens\Progression-.jpg">
 
 The fifth game is testing if a number is prime
 
-<img src="screen\Prime+.jpg">
-<img src="screen\Prime-.jpg">
+<img src="screens\Prime+.jpg">
+<img src="screens\Prime-.jpg">
 
