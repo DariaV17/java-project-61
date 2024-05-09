@@ -10,16 +10,18 @@ public class Prime {
         }
         Engine.run(questions, "Answer 'yes' if given number is prime. Otherwise answer 'no'.");
     }
+
     public static String[] generateRound() {
         int randomNumber = Utils.getRandomNumber(1, 100);
         var correctAnswer = isPrime(randomNumber) ? "yes" : "no";
         return new String[]{String.valueOf(randomNumber),correctAnswer};
     }
+
     private static boolean isPrime(int randomNumber) {
         if (randomNumber < 2) {
             return false;
         }
-        for (int i = 2; i <= randomNumber / 2; i++) {
+        for (int i = 2; i <= Math.sqrt(randomNumber); i++) {
             if (randomNumber % i == 0) {
                 return false;
             }

@@ -10,6 +10,7 @@ public class Progression {
         }
         Engine.run(questions, "What number is missing in the progression?.");
     }
+
     public static String[] generateRound() {
         int firstValue = Utils.getRandomNumber(1, 10);
         int step = Utils.getRandomNumber(1, 10);
@@ -22,6 +23,7 @@ public class Progression {
         String finalProgression = String.join(" ", progression);
         return new String[]{finalProgression, String.valueOf(correctAnswer)};
     }
+
     public static String[] generateProgression(int firstValue, int step, int progressionLength) {
         String[] result = new String[progressionLength];
         for (var i = 0; i < progressionLength; i++) {

@@ -10,6 +10,7 @@ public class Calc {
         }
         Engine.run(questions, "What is the result of the expression?");
     }
+
     public static String[] generateRound() {
         int randomNumber1 = Utils.getRandomNumber(1, 100);
         int randomNumber2 = Utils.getRandomNumber(1, 100);
@@ -20,6 +21,7 @@ public class Calc {
         return new String[]{String.valueOf(randomNumber1 + " " + randomSymbol + " " + randomNumber2),
                 String.valueOf(correctAnswer)};
     }
+
     public static int sumRandomNumbers(int randomNumber1, int randomNumber2, char randomSymbol) {
         var result = 0;
         switch (randomSymbol) {
