@@ -15,7 +15,7 @@ public class Progression {
         int firstValue = Utils.getRandomNumber(1, 10);
         int step = Utils.getRandomNumber(1, 10);
         int progressionLength = Utils.getRandomNumber(5, 10);
-        int hiddenSymbol = Utils.getRandomNumber(0, progressionLength);
+        int hiddenSymbol = Utils.getRandomNumber(0, progressionLength - 1);
         var progression = generateProgression(firstValue, step, progressionLength);
 
         var correctAnswer = progression[hiddenSymbol];
