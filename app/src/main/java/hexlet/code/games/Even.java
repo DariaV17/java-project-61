@@ -14,10 +14,10 @@ public class Even {
     private static String[] generateRound() {
         var number = Utils.getRandomNumber(1, 100);
         var correctAnswer = isEven(number) ? "yes" : "no";
-        return new String[]{String.valueOf(number),correctAnswer};
+        return new String[]{String.valueOf(number), correctAnswer};
     }
 
-   private static boolean isEven(int number) {
+    private static boolean isEven(int number) {
         return number % 2 == 0;
-   }
+    }
 }

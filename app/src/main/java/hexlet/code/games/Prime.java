@@ -14,7 +14,7 @@ public class Prime {
     public static String[] generateRound() {
         int randomNumber = Utils.getRandomNumber(1, 100);
         var correctAnswer = isPrime(randomNumber) ? "yes" : "no";
-        return new String[]{String.valueOf(randomNumber),correctAnswer};
+        return new String[]{String.valueOf(randomNumber), correctAnswer};
     }
 
     private static boolean isPrime(int randomNumber) {

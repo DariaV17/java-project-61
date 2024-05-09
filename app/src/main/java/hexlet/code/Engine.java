@@ -1,5 +1,5 @@
 package hexlet.code;
-import java.util.*;
+import java.util.Scanner;
 
 public class Engine {
     public static final int ROUNDS_COUNT = 3;

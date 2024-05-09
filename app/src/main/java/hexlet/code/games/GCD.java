@@ -20,10 +20,11 @@ public class GCD {
 
     public static int calculateGCD(int randomNumber1, int randomNumber2) {
         int result = 0;
-        for (int i = 1; i <= Math.max(randomNumber1, randomNumber2); i++)
+        for (int i = 1; i <= Math.max(randomNumber1, randomNumber2); i++) {
             if (randomNumber1 % i == 0 && randomNumber2 % i == 0) {
                 result = Math.max(result, i);
             }
+        }
         return result;
     }
 }
