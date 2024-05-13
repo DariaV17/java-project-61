@@ -4,7 +4,7 @@ import hexlet.code.Utils;
 
 public class Prime {
     public static void run() {
-        var questions = new String[3][2];
+        var questions = new String[Engine.ROUNDS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
             questions[i] = generateRound();
         }
