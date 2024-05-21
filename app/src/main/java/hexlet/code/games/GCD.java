@@ -3,8 +3,8 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class GCD {
-    public static final int minNumber = 1;
-    public static final int maxNumber = 100;
+    public static final int MINNUMBER = 1;
+    public static final int MAXNUMBER = 100;
     public static void run() {
         var questions = new String[Engine.ROUNDS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
@@ -14,8 +14,8 @@ public class GCD {
     }
 
     public static String[] generateRound() {
-        int randomNumber1 = Utils.getRandomNumber(minNumber, maxNumber);
-        int randomNumber2 = Utils.getRandomNumber(minNumber, maxNumber);
+        int randomNumber1 = Utils.getRandomNumber(MINNUMBER, MAXNUMBER);
+        int randomNumber2 = Utils.getRandomNumber(MINNUMBER, MAXNUMBER);
         int correctAnswer = calculateGCD(randomNumber1, randomNumber2);
         return new String[]{String.valueOf(randomNumber1 + " " + randomNumber2), String.valueOf(correctAnswer)};
     }
