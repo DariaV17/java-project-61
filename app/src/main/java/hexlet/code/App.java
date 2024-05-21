@@ -18,28 +18,28 @@ public class App {
                 + "6 - Prime\n"
                 + "0 - Exit\n"
                 + "Your choice: ");
-        int choice = scanner.nextInt();
+        String choice = scanner.next();
 
         switch (choice) {
-            case 1:
+            case "1":
                 Cli.greetings();
                 break;
-            case 2:
+            case "2":
                 Even.run();
                 break;
-            case 3:
+            case "3":
                 Calc.run();
                 break;
-            case 4:
+            case "4":
                 GCD.run();
                 break;
-            case 5:
+            case "5":
                 Progression.run();
                 break;
-            case 6:
+            case "6":
                 Prime.run();
                 break;
-            case 0:
+            case "0":
                 System.out.println("Good bye!");
                 break;
             default:

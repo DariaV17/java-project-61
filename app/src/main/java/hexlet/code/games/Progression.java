@@ -3,6 +3,9 @@ import hexlet.code.Engine;
 import hexlet.code.Utils;
 
 public class Progression {
+    public static final int minNumber = 1;
+    public static final int maxNumber = 10;
+    public static final int minProgLength = 5;
     public static void run() {
         var questions = new String[Engine.ROUNDS_COUNT][2];
         for (int i = 0; i < Engine.ROUNDS_COUNT; i++) {
@@ -12,9 +15,9 @@ public class Progression {
     }
 
     public static String[] generateRound() {
-        int firstValue = Utils.getRandomNumber(1, 10);
-        int step = Utils.getRandomNumber(1, 10);
-        int progressionLength = Utils.getRandomNumber(5, 10);
+        int firstValue = Utils.getRandomNumber(minNumber, maxNumber);
+        int step = Utils.getRandomNumber(minNumber, maxNumber);
+        int progressionLength = Utils.getRandomNumber(minProgLength, maxNumber);
         int hiddenSymbol = Utils.getRandomNumber(0, progressionLength - 1);
         var progression = generateProgression(firstValue, step, progressionLength);
 
